@@ -1,0 +1,462 @@
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #172033;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    color: #475569;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #0d6efd;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #f5f8ff, #ffffff);
+}
+
+.hero-image-wrapper {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card {
+    background: white;
+    border-radius: 25px;
+    padding: 60px 40px;
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 70px rgba(15, 23, 42, 0.10);
+}
+
+.floating-card {
+    position: absolute;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+}
+
+.floating-top {
+    top: 35px;
+    right: 0;
+}
+
+.floating-bottom {
+    bottom: 35px;
+    left: 0;
+}
+
+.hero-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+    font-weight: bold;
+}
+
+.avatar-two {
+    background: #198754;
+}
+
+.avatar-three {
+    background: #fd7e14;
+}
+
+.section-label {
+    color: #0d6efd;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* =====================================
+   FEATURES PAGE - LIGHT MODE
+===================================== */
+
+.features-section {
+    background: #f7f9fc;
+    color: #172033;
+}
+
+.features-section h2,
+.features-section h5 {
+    color: #172033;
+}
+
+.features-section p {
+    color: #64748b;
+}
+
+.feature-card {
+    background: #ffffff;
+    color: #172033;
+    border: 1px solid #e5eaf1;
+    border-radius: 15px;
+    padding: 27px 23px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf1ff;
+    color: #0d6efd;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.section-label {
+    color: #0d6efd;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* =====================================
+   FEATURES PAGE - DARK MODE
+===================================== */
+
+body.dark-mode .features-section {
+    background: #111827 !important;
+    color: #f9fafb !important;
+}
+
+body.dark-mode .features-section h2,
+body.dark-mode .features-section h5 {
+    color: #f9fafb !important;
+}
+
+body.dark-mode .features-section p,
+body.dark-mode .features-section .text-secondary {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .features-section .feature-card {
+    background: #1f2937 !important;
+    color: #f9fafb !important;
+    border: 1px solid #374151 !important;
+}
+
+body.dark-mode .features-section .feature-icon {
+    background: #263b60 !important;
+    color: #60a5fa !important;
+}
+
+body.dark-mode .features-section .section-label {
+    color: #60a5fa !important;
+}
+
+
+.about-visual {
+    min-height: 350px;
+    background: linear-gradient(135deg, #0d6efd, #6f42c1);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+}
+
+.about-visual i {
+    font-size: 100px;
+}
+
+.about-visual span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.contact-section {
+    background: #f5f8ff;
+}
+
+.footer {
+    background: #101827;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #0d6efd;
+}
+
+@media (max-width: 991px) {
+    .hero-image-wrapper {
+        min-height: 350px;
+    }
+
+    .floating-top {
+        right: 0;
+    }
+
+    .floating-bottom {
+        left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-card {
+        padding: 40px 20px;
+    }
+
+    .floating-card {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .hero-image-wrapper {
+        min-height: 320px;
+    }
+}
+.resize-none{
+    resize:none;
+}
+
+
+/* ===================================
+   DARK MODE NAVBAR
+=================================== */
+
+.navbar {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-dark-mode {
+    background-color: #172033 !important;
+}
+
+.navbar-dark-mode .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-dark-mode .nav-link {
+    color: #d1d5db;
+}
+
+.navbar-dark-mode .nav-link:hover {
+    color: #60a5fa;
+}
+
+.navbar-dark-mode .navbar-toggler {
+    border-color: #64748b;
+}
+
+.navbar-dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* ===================================
+   DARK MODE BUTTON
+=================================== */
+
+.theme-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 9px 17px;
+    border: 1px solid #dbe2ea;
+    border-radius: 50px;
+    background-color: #f8fafc;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn i {
+    font-size: 16px;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+}
+
+.navbar-dark-mode .theme-toggle-btn {
+    background-color: #273449;
+    color: #f5d864;
+    border-color: #475569;
+}
+
+.navbar-dark-mode .theme-toggle-btn:hover {
+    background-color: #334155;
+}
+
+
+/* ===================================
+   GLOBAL DARK MODE
+=================================== */
+
+body.dark-mode {
+    background-color: #111827;
+    color: #e5e7eb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode #app {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+/* Headings and paragraphs */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f9fafb;
+}
+
+body.dark-mode p,
+body.dark-mode .text-secondary {
+    color: #cbd5e1 !important;
+}
+
+/* Cards */
+body.dark-mode .card {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    border-color: #374151 !important;
+}
+
+/* Forms */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #273449;
+    color: #f9fafb;
+    border-color: #475569;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode .form-label {
+    color: #e5e7eb;
+}
+
+/* Tables */
+body.dark-mode .table {
+    --bs-table-color: #e5e7eb;
+    --bs-table-bg: #1f2937;
+    --bs-table-border-color: #374151;
+    --bs-table-hover-color: #ffffff;
+    --bs-table-hover-bg: #334155;
+}
+
+body.dark-mode .table-light {
+    --bs-table-color: #ffffff;
+    --bs-table-bg: #273449;
+}
+
+/* Modal */
+body.dark-mode .modal-content {
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: #374151;
+}
+
+/* Background utilities */
+body.dark-mode .bg-white {
+    background-color: #1f2937 !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: #273449 !important;
+}
+
+/* Borders */
+body.dark-mode .border,
+body.dark-mode .border-top,
+body.dark-mode .border-bottom {
+    border-color: #374151 !important;
+}
+
+/* Alerts */
+body.dark-mode .alert-info {
+    background-color: #1e3a5f;
+    color: #dbeafe;
+    border-color: #2563eb;
+}
+
+body.dark-mode .alert-success {
+    background-color: #14532d;
+    color: #dcfce7;
+    border-color: #166534;
+}
+
+body.dark-mode .alert-danger {
+    background-color: #7f1d1d;
+    color: #fee2e2;
+    border-color: #991b1b;
+}
+
+/* Pagination */
+body.dark-mode .page-link {
+    background-color: #273449;
+    color: #e5e7eb;
+    border-color: #475569;
+}
+
+body.dark-mode .page-item.active .page-link {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-color: #0d6efd;
+}
+
+body.dark-mode .page-item.disabled .page-link {
+    background-color: #1f2937;
+    color: #64748b;
+}
